@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.prajwalyashasvi.worktest" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.prajwalyashasvi.worktest.Login"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.prajwalyashasvi.worktest.landinguser"
+            android:label="@string/title_activity_landinguser" >
+        </activity>
+        <activity
+            android:name="com.example.prajwalyashasvi.worktest.allBooks"
+            android:label="@string/title_activity_all_books" >
+        </activity>
+        <activity
+            android:name="com.example.prajwalyashasvi.worktest.userSellAd"
+            android:label="@string/title_activity_user_sell_ad" >
+        </activity>
+        <activity
+            android:name="com.example.prajwalyashasvi.worktest.userBuyReq"
+            android:label="@string/title_activity_user_buy_req" >
+        </activity>
+        <activity
+            android:name="com.example.franckamayou.barcodescanningapp.ScanActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+    </application>
+
+</manifest>

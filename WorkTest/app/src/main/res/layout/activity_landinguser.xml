@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.prajwalyashasvi.worktest.landinguser">
+
+    <Button
+        android:id="@+id/buttonBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="searchDB"
+        android:text="@string/search"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Ads"
+        android:onClick="searchSellUser"
+        android:id="@+id/buttonsellAd"
+        android:layout_below="@+id/buttonBook"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/buttonBook" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy Requests"
+        android:onClick="searchBuyUser"
+        android:id="@+id/buttonreqBuy"
+        android:layout_below="@+id/buttonsellAd"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/buttonsellAd" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy New Books"
+        android:id="@+id/buttonBuyNew"
+        android:layout_below="@+id/buttonreqBuy"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/buttonreqBuy" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Book Sell AD"
+        android:id="@+id/buttonSellReq"
+        android:layout_below="@+id/buttonBuyNew"
+        android:onClick="sellNewBook"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/buttonBuyNew" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:id="@+id/button3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
